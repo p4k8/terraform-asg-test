@@ -48,4 +48,3 @@ resource "aws_key_pair" "test-kp"{
   key_name = "test key name"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyfHspMlLqYyvf08gMYoVdQRN26v2+ORbcoxF1/w7LLKPt4iK2qiEWTX594cZ5nDE4dbSd00y5it1HBjQHd8ijHsF+P2os3G3hUQnM5cEJiZlL7uhH8K/GxSv+sn1LJEVn1IDOWORRT7EssWUznk8XT3udGz1HqE/tv3/Gz4BqVMmqzVZU1HGV1YWDOrJg1VKuQxRPJndBe+Q5xWJ1QNnfin/ADj+ZVrpvS5yTocNjMCcNXAZbDllVYmcDq7ywcHhF/kbjAJB0PY3owBCYKOehfpLfGZZPJk/kxvc4KN9gFxFTFz9F6P8di67Q1ZShVsxX2G24caDh/LGp39MK3L0a6YBZkomo+l6dL9eTB+adoeSsEli0/31RCK3/YQc+7vOuyElLUFhOvlLnrLk0BpNBhveGsMieTprxf2r++Pc+0EKlV5RVhQmao30UFn0nvLXSeL4B6uOH5ktC5Xc/80njGX9Vxgu+29Npy31zE2m6Ewq7JqixzvtfCiLxvLwUyL8="
 }
-
