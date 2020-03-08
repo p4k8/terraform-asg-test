@@ -1,6 +1,17 @@
+
 provider "aws" {
   version = "~> 2.43"
   region = var.region
+}
+
+terraform {
+  backend "s3" {
+    bucket = "tf-state-storage-s3-test"
+    key    = "terraform.tfstate"
+    region = "eu-central-1"
+    dynamodb_table = "tf-state-lock-dynamo"
+    encrypt        = true
+  }
 }
 
 locals {
