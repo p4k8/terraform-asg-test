@@ -1,7 +1,6 @@
 resource "aws_launch_template" "bastion_asg_lt" {
   image_id      = data.aws_ami.test-ami.id
   instance_type = "t2.micro"
-#  vpc_security_group_ids = [aws_security_group.test-nacl-allow-all-out.id]
   key_name = "test key name"
   network_interfaces {
     security_groups = [aws_security_group.test-nacl-allow-all-out.id]
@@ -18,7 +17,6 @@ resource "aws_launch_template" "bastion_asg_lt" {
 resource "aws_launch_template" "target_asg_lt" {
   image_id      = data.aws_ami.test-ami.id
   instance_type = "t2.micro"
-#  vpc_security_group_ids = [aws_security_group.test-nacl-allow-all-out.id]
   key_name = "test key name"
   network_interfaces {
       security_groups = [aws_security_group.test-nacl-allow-all-out.id]
